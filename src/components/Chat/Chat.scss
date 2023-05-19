@@ -1,0 +1,58 @@
+@import './../../scss/variables';
+
+.chat {
+    display: flex;
+    flex-direction: column;
+
+    &__messages {
+        background-image: url(./../../assets/images/background.png);
+        height: calc(100vh - 62px - 59px);
+        overflow: scroll;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 15px;
+
+        }
+    }
+
+    &__list {
+        display: block;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+        background-color: #d9fdd3;
+
+        &-left {
+            background-color: #fff;
+            align-self: start;
+        }
+    }
+
+
+    &__form {
+        height: 62px;
+        background-color: $primary;
+        padding: 10px 40px 10px 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input {
+        padding: 0 25px;
+        width: 837px;
+        height: 42px;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+    }
+}
+
+.button {
+    border: none;
+    background: transparent;
+}

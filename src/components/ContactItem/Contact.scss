@@ -1,0 +1,52 @@
+@import './../../scss/variables';
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    height: 72px;
+    padding: 12px 12px 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+
+    &__list {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        span {
+            align-self: flex-end;
+        }
+    }
+
+    &__avatar {
+        img {
+            height: 50px;
+        }
+    }
+
+    &__number {
+        width: 288px;
+        justify-self: start;
+    }
+
+    &__name {
+        font-size: 17px;
+    }
+
+    &__message {
+        margin-top: 5px;
+        font-size: 13px;
+        color: $text;
+    }
+
+    &__time {
+        font-size: 12px;
+        color: $text;
+    }
+
+    &-header {
+        align-items: center;
+        gap: 15px;
+    }
+}
